@@ -1,4 +1,3 @@
-cat > README.md <<'EOF'
 # Mini C Preprocessor
 
 ## Project Overview
@@ -10,14 +9,14 @@ It demonstrates selected preprocessing operations performed before compilation.
 ## Features
 
 ### 1. Comment Removal
-- Removes single-line comments (//).
-- Removes multi-line comments (/* ... */).
+- Removes single-line comments (`//`).
+- Removes multi-line comments (`/* ... */`).
 - Includes basic handling of double-quoted strings.
 
 ### 2. File Inclusion
-- Processes basic #include directives.
+- Processes basic `#include` directives.
 - Supports header filenames using quotation marks and angle brackets.
-- Attempts to locate system headers in /usr/include.
+- Attempts to locate system headers in `/usr/include`.
 
 ### 3. Macro Handling
 - Supports object-like macros.
@@ -36,21 +35,25 @@ It demonstrates selected preprocessing operations performed before compilation.
 
 ## Project Structure
 
-- cmdtremove.c - Comment removal implementation
-- cmdremoval.h - Comment removal declaration
-- file_inclusion.c - File inclusion implementation
-- file_inclusion.h - File inclusion declaration
-- macro_handler.c - Macro processing implementation
-- macro_handler.h - Macro processing declaration
-- mypreprocessor.c - Main program
-- test.c - Testing source file
-- Makefile - Build instructions
+| File | Description |
+|---|---|
+| `cmtremove.c` | Comment removal implementation |
+| `cmdremoval.h` | Comment removal declaration |
+| `file_inclusion.c` | File inclusion implementation |
+| `file_inclusion.h` | File inclusion declaration |
+| `macro_handler.c` | Macro processing implementation |
+| `macro_handler.h` | Macro processing declaration |
+| `mypreprocessor.c` | Main program |
+| `test.c` | Testing source file |
+| `Makefile` | Build instructions |
 
 ## Compilation
 
 Build the project using:
 
+```bash
 make
+```
 
 Run the generated executable according to the Makefile.
 
@@ -65,4 +68,3 @@ This is an educational implementation of selected C preprocessing operations. It
 - Understanding string processing.
 - Practising modular programming.
 - Learning basic preprocessing concepts.
-EOF
